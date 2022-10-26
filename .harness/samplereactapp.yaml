@@ -12,13 +12,6 @@ pipeline:
         type: CI
         spec:
           cloneCodebase: true
-          infrastructure:
-            type: KubernetesDirect
-            spec:
-              connectorRef: DhrubaDemoCI2
-              namespace: dhruba-demo-ci
-              nodeSelector: {}
-              os: Linux
           execution:
             steps:
               - step:
@@ -61,6 +54,12 @@ pipeline:
                     repo: harnesscommunity/react-testing
                     tags:
                       - latest
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
   properties:
     ci:
       codebase:
