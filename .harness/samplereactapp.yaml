@@ -8,7 +8,6 @@ pipeline:
     - stage:
         name: build test and run
         identifier: build_test_and_run
-        description: ""
         type: CI
         spec:
           cloneCodebase: true
