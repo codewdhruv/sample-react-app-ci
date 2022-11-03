@@ -15,15 +15,6 @@ pipeline:
             steps:
               - step:
                   type: Run
-                  name: install node modules
-                  identifier: install_node_modules
-                  spec:
-                    connectorRef: account.harnessImage
-                    image: harnesscommunity/sample-react-app:latest
-                    shell: Sh
-                    command: npm install
-              - step:
-                  type: Run
                   name: create image
                   identifier: create_image
                   spec:
