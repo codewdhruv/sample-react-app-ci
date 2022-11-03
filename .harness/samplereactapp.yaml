@@ -49,7 +49,7 @@ pipeline:
                   name: build and push to docker
                   identifier: build_and_push_to_docker
                   spec:
-                    connectorRef: account.harnessImage
+                    connectorRef: harnesscommunitydocker
                     repo: harnesscommunity/react-testing
                     tags:
                       - latest
