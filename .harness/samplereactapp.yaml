@@ -43,6 +43,7 @@ pipeline:
                     repo: harnesscommunity/react-testing
                     tags:
                       - latest
+                    dockerfile: Dockerfile
           platform:
             os: Linux
             arch: Amd64
