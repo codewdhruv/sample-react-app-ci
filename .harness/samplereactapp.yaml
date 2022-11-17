@@ -26,7 +26,7 @@ pipeline:
                   identifier: build_and_push_to_docker
                   spec:
                     connectorRef: harnesscommunitydocker
-                    repo: harnesscommunity/react-testing
+                    repo: harnesscommunity/python-test
                     tags:
                       - latest
                     dockerfile: Dockerfile
