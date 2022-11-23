@@ -30,13 +30,12 @@ pipeline:
                     tags:
                       - latest
                     dockerfile: Dockerfile
-          infrastructure:
-            type: KubernetesDirect
-            spec:
-              connectorRef: k8sdelegate
-              namespace: harness-delegate-ng
-              nodeSelector: {}
-              os: Linux
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
   properties:
     ci:
       codebase:
