@@ -25,8 +25,8 @@ pipeline:
                   name: build and push to docker
                   identifier: build_and_push_to_docker
                   spec:
-                    connectorRef: harnesscommunitydocker
-                    repo: harnesscommunity/python-test
+                    connectorRef: <+input>
+                    repo: <+input>
                     tags:
                       - latest
                     dockerfile: Dockerfile
