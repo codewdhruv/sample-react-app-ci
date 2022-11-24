@@ -21,6 +21,13 @@ pipeline:
                     shell: Sh
                     command: npm install
               - step:
+                  type: Run
+                  name: run tests
+                  identifier: run_tests
+                  spec:
+                    shell: Sh
+                    command: npm test
+              - step:
                   type: BuildAndPushDockerRegistry
                   name: build and push to docker
                   identifier: build_and_push_to_docker
